@@ -28,6 +28,7 @@ jobs:
         python -m pip install --upgrade pip
 
     - name: Run application
+      working-directory: modules/wk3/complete-stack-app
       run: |
         python MainForStack.py
 
