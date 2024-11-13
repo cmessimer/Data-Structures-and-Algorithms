@@ -1,4 +1,4 @@
-name: Python Stack Application CI
+name: Python Stack Application CI - ${{ github.event.inputs.target-file }}
 
 on:
   push:
@@ -41,6 +41,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
 
-    - name: Run selected application
+    - name: Run application - ${{ github.event.inputs.target-file }}
       run: |
-        python ${{ github.event.inputs.target-file }}
+        python "${{ github.event.inputs.target-file }}"
