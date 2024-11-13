@@ -8,7 +8,7 @@ on:
   pull_request:
     branches:
       - main
-  workflow_dispatch: # Manual trigger with input parameter
+  workflow_dispatch:
     inputs:
       target-file:
         description: 'Select the application file to run'
@@ -16,8 +16,8 @@ on:
         type: choice
         options:
           - modules/complete-stack-app/MainForStack.py
-          - modules/wk2/Doubly-linked-list/main.py
-          - modules/wk2/Singly-linked-list/main.py
+          - modules/wk2/doubly-linked-list/main.py
+          - modules/wk2/singly-linked-list/main.py
         default: modules/complete-stack-app/MainForStack.py
 
 jobs:
@@ -32,6 +32,10 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.x'
+
+    - name: List files for debugging
+      run: |
+        ls -R
 
     - name: Install dependencies
       run: |
