@@ -16,7 +16,7 @@ on:
         type: choice
         options:
           - modules/wk3/complete-stack-app/MainForStack.py
-          - modules/wk2/Doubly-linked-list/main.py
+          - "modules/wk2/Doubly-linked-list/Main.py"
           - modules/wk2/Singly-linked-list/main.py
         default: modules/wk3/complete-stack-app/MainForStack.py
 
