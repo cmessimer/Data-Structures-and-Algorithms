@@ -16,7 +16,7 @@ on:
         type: choice
         options:
           - modules/wk3/complete-stack-app/MainForStack.py
-          - "modules/wk2/Doubly\ linked-list/main.py"
+          - "modules/wk2/Doubly linked-list/main.py"
           - modules/wk2/Singly-linked-list/main.py
         default: modules/wk3/complete-stack-app/MainForStack.py
 
@@ -42,6 +42,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
 
+    - name: Set working directory
+      run: |
+        cd $(dirname "${{ github.event.inputs.target-file }}")
+
     - name: Run application - ${{ github.event.inputs.target-file }}
       run: |
-        python "${{ github.event.inputs.target-file }}"
+        python $(basename "${{ github.event.inputs.target-file }}")
