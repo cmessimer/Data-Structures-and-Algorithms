@@ -1,4 +1,4 @@
-name: Python Stack Application CI - ${{ github.event.inputs.target-file }}
+name: Python Application CI
 
 on:
   push:
@@ -22,6 +22,7 @@ on:
 
 jobs:
   build:
+    name: Build and Run Application - ${{ github.event.inputs.target-file }}
     runs-on: ubuntu-latest
 
     steps:
