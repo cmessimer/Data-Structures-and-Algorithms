@@ -8,7 +8,16 @@ on:
   pull_request:
     branches:
       - main
-  workflow_dispatch: # Manual trigger option
+  workflow_dispatch: # Manual trigger with input parameter
+    inputs:
+      target-file:
+        description: 'Select the application file to run'
+        required: true
+        type: choice
+        options:
+          - modules/complete-stack-app/MainForStack.py
+          - modules/wk2/Doubly-linked-list/main.py
+          - modules/wk2/Singly-linked-list/main.py
 
 jobs:
   build:
@@ -27,8 +36,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
 
-    - name: Run application
-      working-directory: modules/wk3/complete-stack-app
+    - name: Run selected application
       run: |
-        python MainForStack.py
-
+        python ${{ github.event.inputs.target-file }}
