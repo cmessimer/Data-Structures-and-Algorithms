@@ -1,0 +1,66 @@
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.log
+*.tmp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment and package files
+.env
+.venv/
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# macOS and Linux system files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python project-specific files
+*.egg-info/
+build/
+dist/
+*.egg
+*.manifest
+*.spec
+
+# Python virtual environments and dependencies
+*.lock
+*.tox/
+
+
+# Ignore .history files (VS Code History or other editors)
+.history/
+.history/modules/wk2/Doubly-linked-list
+
+# Ignore compiled C# and .NET files
+bin/
+obj/
+*.dll
+*.exe
+
+# Ignore .NET specific project files (if generated automatically)
+*.appsettings.json
+publish/
+*.csproj.user
+*.vs/
+
+# Ignore Python generated files
+LinkedList.pyc
+Node.pyc
