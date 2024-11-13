@@ -18,6 +18,7 @@ on:
           - modules/complete-stack-app/MainForStack.py
           - modules/wk2/Doubly-linked-list/main.py
           - modules/wk2/Singly-linked-list/main.py
+        default: modules/complete-stack-app/MainForStack.py
 
 jobs:
   build:
