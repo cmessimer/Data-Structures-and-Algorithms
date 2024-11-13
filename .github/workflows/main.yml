@@ -15,10 +15,10 @@ on:
         required: true
         type: choice
         options:
-          - modules/complete-stack-app/MainForStack.py
-          - modules/wk2/doubly-linked-list/main.py
-          - modules/wk2/singly-linked-list/main.py
-        default: modules/complete-stack-app/MainForStack.py
+          - modules/wk3/complete-stack-app/MainForStack.py
+          - "modules/wk2/Doubly linked-list/main.py"
+          - modules/wk2/Singly-linked-list/main.py
+        default: modules/wk3/complete-stack-app/MainForStack.py
 
 jobs:
   build:
