@@ -1,3 +1,5 @@
+# RUN LOCALLY or add another Python CI GH Action with parameters to run via GH Actions
+
 from HashTable import HashTable
 from Client import Client
 
