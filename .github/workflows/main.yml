@@ -19,6 +19,7 @@ on:
           - modules/wk3/complete-queue-app/MainForQueue.py
           - "modules/wk2/Doubly-linked-list/Main.py"
           - modules/wk2/Singly-linked-list/main.py
+          - modules/wk4/MainForHashTable.py
         default: modules/wk3/complete-stack-app/MainForStack.py
 
 jobs:
